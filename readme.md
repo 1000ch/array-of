@@ -10,14 +10,18 @@ Functionally:
 
 ```javascript
 var arrayOf = require('array-of');
+
+console.log(arrayOf(1, 2, 3));
+// => [1, 2, 3]
 ```
 
 From Array object:
 
 ```javascript
 require('array-of');
-console.log(array.find(isPrimary));
-// => 5
+
+console.log(Array.of(4, 5, 6));
+// => [4, 5, 6]
 ```
 
 ## License
