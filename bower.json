@@ -1,0 +1,21 @@
+{
+  "name": "array-of",
+  "main": "index.js",
+  "homepage": "https://github.com/1000ch/array-of",
+  "authors": [
+    "1000ch <shogo.sensui@gmail.com>"
+  ],
+  "description": "Polyfill for Array.of",
+  "keywords": [
+    "array",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
