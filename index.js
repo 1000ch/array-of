@@ -1,12 +1,8 @@
 (function(root, arrayOf) {
 
-  if (typeof exports !== 'undefined') {
+  if (typeof module !== 'undefined' && module.exports) {
 
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = arrayOf;
-    }
-
-    exports.arrayOf = arrayOf;
+    module.exports = arrayOf;
 
   } else if (typeof define === 'function' && define.amd) {
 
@@ -14,14 +10,6 @@
       return arrayOf;
     });
 
-  }
-
-  if (!Array.of) {
-    Object.defineProperty(Array, 'of', {
-      value: arrayOf,
-      configurable: true,
-      writable: true
-    });
   }
 
 })(this, function () {

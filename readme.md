@@ -18,7 +18,7 @@ console.log(arrayOf(1, 2, 3));
 From Array object:
 
 ```javascript
-require('array-of');
+require('array-of/shim');
 
 console.log(Array.of(4, 5, 6));
 // => [4, 5, 6]
