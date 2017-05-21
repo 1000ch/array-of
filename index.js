@@ -1,19 +1,16 @@
-(function(root, arrayOf) {
+module.exports = function of() {
+  if (!Array.isArray(this) && typeof this === 'function') {
+    var Class = this;
+    var instance = new Class();
+    var length = arguments.length;
 
-  if (typeof module !== 'undefined' && module.exports) {
+    for (var i = 0; i < length; i++) {
+      instance[i] = arguments[i];
+    }
+    instance.length = length;
 
-    module.exports = arrayOf;
-
-  } else if (typeof define === 'function' && define.amd) {
-
-    define([], function() {
-      return arrayOf;
-    });
-
+    return instance;
   }
 
-})(this, function () {
-
   return Array.prototype.slice.call(arguments);
-
-});
+};
