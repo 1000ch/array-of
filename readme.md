@@ -4,6 +4,12 @@ Polyfill for Array.of.
 
 [![testling badge](https://ci.testling.com/1000ch/array-of.png)](https://ci.testling.com/1000ch/array-of)
 
+## Install
+
+```bash
+$ npm install --save-dev array-of
+```
+
 ## Usage
 
 Functionally:
@@ -26,4 +32,4 @@ console.log(Array.of(4, 5, 6));
 
 ## License
 
-MIT: http://1000ch.mit-license.org
+[MIT](https://1000ch.mit-license.org) © [Shogo Sensui](https://github.com/1000ch)
